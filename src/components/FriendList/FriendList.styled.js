@@ -20,13 +20,13 @@ export const Item = styled.li`
     
 `;
 
-export const StatusCircle = styled.span`
+export const StatusIndicator = styled.span`
   width: 20px;
   height: 20px;
-  background-color: red;
   border-radius: 50%;
   margin-left: auto; 
-`;
+ background-color: ${props => (props.isOnline ? 'green' : 'red')};
+ `;
 
 export const Avatar = styled.img`
   width: 48px;
@@ -38,5 +38,5 @@ export const Name = styled.p`
   font-weight: bold;
   font-size: 16px;
   color: #333;
-  margin-right: auto; /* Розміщуємо справа */
+   flex-grow: 1;
 `;
