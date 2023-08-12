@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 
 export const Wrapper = styled.ul`
-    width: 50%;
+    width: 25%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -25,14 +25,16 @@ export const StatusIndicator = styled.span`
   height: 20px;
   border-radius: 50%;
   margin-left: auto; 
- background-color: ${props => (props.isOnline ? 'green' : 'red')};
+   background-color: ${(props) => (props.isOnline ? "green" : "red")};
  `;
+
+
 
 export const Avatar = styled.img`
   width: 48px;
   height: 48px;
-  margin-right: 10px;
-`;
+  margin-right: 30px;
+  margin-left: 30px;`;
 
 export const Name = styled.p`
   font-weight: bold;
